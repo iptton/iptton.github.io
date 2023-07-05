@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: iptton
 
 # Short bio or description (displayed in the header)
 description: Web Developer from Somewhere
@@ -84,3 +84,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme 
