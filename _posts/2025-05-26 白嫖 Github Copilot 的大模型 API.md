@@ -1,3 +1,8 @@
+---
+title: "白嫖 Github Copilot 的大模型 Api"
+date: "2025-05-26"
+---
+
 AI Coding 领域，Github Copilot 算是起个大早，赶了个晚集，Vibe Coding 现在成了追赶者，不过胜在财大气粗，今年开始提供了免费使用额度。
 
 ![[Pasted image 20250526133153.png]]免费用户可使用 Claude 3.5 / Gemini 2.0 Flash / GPT 4.1 / o3-min 等模型，其中 4.1 次数为 2000 次每月。而 Pro 订阅用户的使用次数为无限次，尽管其订阅是 10 刀一月，但很多开源库作者是被授权免费使用 Pro 版本的。尽管 Github Copilot 的使用不尽如人意，但它的模型不调用实在太可惜了。除了用 Github Copilot 插件和它的网页 ( github.com/copilot ) 外有没办法在我们自己的代码中使用这些模型呢？答案是有的。借助 AI ，查了下 zed 的源码，要调用 Github Copilot 的模型 API ，需要三个步骤：

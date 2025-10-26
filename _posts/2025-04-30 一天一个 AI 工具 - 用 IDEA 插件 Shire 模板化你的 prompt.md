@@ -1,3 +1,8 @@
+---
+title: "一天一个 Ai 工具 用 Idea 插件 Shire 模板化你的 Prompt"
+date: "2025-04-30"
+---
+
 Shire 是一个开源的 AI 编程插件(语言)。作者也有一篇介绍： [Shire 编码智能体语言：打造你的专属 AI 编程助手](https://cloud.tencent.com.cn/developer/article/2437687)。这是一个（几乎只）对程序员友好的工具，官方有更详细的介绍：[https://shire.phodal.com/](https://shire.phodal.com/)。通过本文可以大致了解用它可以做什么。
 
 

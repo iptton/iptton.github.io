@@ -1,3 +1,8 @@
+---
+title: "Googlecloud 广告会"
+date: "2025-09-12"
+---
+
 Agent Development Kit
 Live API: 多模态语音视频处理
 

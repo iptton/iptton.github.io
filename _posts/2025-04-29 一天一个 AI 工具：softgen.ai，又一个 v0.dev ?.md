@@ -1,3 +1,8 @@
+---
+title: "一天一个 Ai 工具：softgen.ai，又一个 V0.dev ?"
+date: "2025-04-29"
+---
+
  
  
  今天要体验的是 `softgen.ai` ，注册赠送 250k token。

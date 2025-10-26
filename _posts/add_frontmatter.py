@@ -12,18 +12,24 @@ def process_files():
                     print(f"Skipping empty file: {filename}")
                     continue
 
-                if first_line.strip() != '---':
+                # Allow BOM and leading spaces before front matter delimiter
+                if first_line.lstrip('\ufeff').strip() != '---':
                     print(f"Processing {filename}")
                     f.seek(0)
                     content = f.read()
 
-                    match = re.match(r'(\d{4}-\d{2}-\d{2})(-(.+))?\.md', filename)
+                    # Match filenames like:
+                    #   2018-01-01-title.md
+                    #   2018-01-01 title.md
+                    match = re.match(r'^(\d{4}-\d{2}-\d{2})(?:[ -](.+))?\.md$', filename)
                     if match:
                         date = match.group(1)
-                        title_part = match.group(3)
+                        title_part = match.group(2)
 
                         if title_part:
-                            title = ' '.join(word.capitalize() for word in title_part.split('-'))
+                            # Split on hyphens or whitespace, then Title Case
+                            words = re.split(r'[-\s]+', title_part.strip())
+                            title = ' '.join(word.capitalize() for word in words if word)
                         else:
                             title = date
 

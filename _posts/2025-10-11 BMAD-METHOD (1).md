@@ -1,3 +1,8 @@
+---
+title: "Bmad Method (1)"
+date: "2025-10-11"
+---
+
 BMAD MTHOD (Breakthrough Method of Agile AI-Driven Development)是一个开源的 AI 驱动敏捷开发方法。
 
 BMAD 通过给 LLM 指定人设和工作流，设定敏捷方法中的各种角色完成任务。

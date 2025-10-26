@@ -1,3 +1,8 @@
+---
+title: "一天一个 Ai 工具 Firebase Studio (也许值得一试?）"
+date: "2025-05-07"
+---
+
 > TLDR:  Firebase Studio 是 Google 推出的一款云编程平台（需科学上网）。特点：
 > 
 > 1. 有两种模式：Code/Prototyper ，前者与 v0.dev 类似，后者则是一个 VSCode 云编辑器较弱

@@ -1,3 +1,8 @@
+---
+title: "Cline 的 System Prompt(1)"
+date: "2025-04-17"
+---
+
 
 1. 角色设定
 ```markdown

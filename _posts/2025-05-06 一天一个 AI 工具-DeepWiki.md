@@ -1,3 +1,8 @@
+---
+title: "一天一个 Ai 工具 Deepwiki"
+date: "2025-05-06"
+---
+
 DeepWiki 的官方介绍：DeepWiki provides up-to-date documentation you can talk to, for every repo in the world. Think Deep Research for GitHub.
 > 一款辅助你了解  Github 代码仓库的工具，Github 上的 DeepResearch。
 
