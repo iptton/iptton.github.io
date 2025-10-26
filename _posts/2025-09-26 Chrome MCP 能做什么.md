@@ -1,0 +1,1 @@
+[9/23 google 发布了  Chrome MCP](https://developer.chrome.com/blog/chrome-devtools-mcp?hl=zh-cn)。
