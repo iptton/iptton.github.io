@@ -15,21 +15,28 @@ KEY IDEA:
 
 多数程序员做出编码决策时都是依据直觉。
 
-\`\`\`c++ for (Node \*node = list->head; node != NULL; node = node->next) Print(node-data);
+```c++ 
+for (Node *node = list->head; node != NULL; node = node->next) Print(node-data);
+```
 
-<pre><code class=""><br />会比以下代码要好：
+会比以下代码要好：
 
-\`\`\`c++ Node \*node = list->head; if (node == NULL) return;
-
+```c++ 
+Node \*node = list->head; if (node == NULL) return;
 while (node->next != NULL) { Print(node->data); node = node->next; } if (node != NULL) Print(node->data)
+```
 
 以上两段代码实现功能是一致的，但是，很多时间，选择是比较艰难的。如
 
-\`\`\`c++ return exponent >= 0 ? mantissa \* (1 << exponent) : mantissa / (1 << -exponent);
+```c++ 
+return exponent >= 0 ? mantissa \* (1 << exponent) : mantissa / (1 << -exponent);
+```
 
-<pre><code class=""><br />可读性明显要差于
+可读性明显要差于
 
-\`\`\`c++ if (exponent >= 0){ return mantissa \* (1 << exponent); } else { return mantissa \* (1 << -exponent); }
+```c++ 
+if (exponent >= 0){ return mantissa \* (1 << exponent); } else { return mantissa \* (1 << -exponent); }
+```
 
 第一段代码更紧凑，但第二段代码会更友善。哪种标准更重要？或者说，你要如何决定用哪种方式来编码？
 
@@ -51,17 +58,24 @@ while (node->next != NULL) { Print(node->data); node = node->next; } if (node !=
 
 但是更少的行数并不总意味着更好：
 
-\`\`\`c++ assert((!(bucket = FineBucket(key))) || !bucket->IsOccupied());
+```c++ 
+assert((!(bucket = FineBucket(key))) || !bucket->IsOccupied());
+```
 
-<pre><code class=""><br />与以下代码相比：
+与以下代码相比：
 
-\`\`\`c++ bucket = FindBucket(key); if (bucket != null) assert(!bucket->IsOccupied());
+```c++
+bucket = FindBucket(key); if (bucket != null) assert(!bucket->IsOccupied());
+```
 
 要花更多时间理解。
 
 类似的，可以用一行注释就能让你的代码能被快速理解：
 
-`c++ // Fast version of " hash = (65599 * hash) +c" hash = (hash << 6) + (hash << 16) - hash - c;`
+`c++
+ // Fast version of " hash = (65599 * hash) +c" 
+ hash = (hash << 6) + (hash << 16) - hash - c;
+ ```
 
 所以，相比于写更简短的代码这个目标，写出最小化理解时间的代码这个目标更好。
 
