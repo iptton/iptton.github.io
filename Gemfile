@@ -2,6 +2,8 @@
 
 source "https://rubygems.org"
 
+gem "jekyll", "~> 4.4"
+
 gemspec
 
 group :test do
